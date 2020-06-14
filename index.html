@@ -457,16 +457,60 @@
       <form action="" class="modal-form">
         <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
 
-        <input type="text" id="name" placeholder="Имя" />
-        <input type="tel" id="tel" placeholder="Телефон" />
-        <input type="email" id="mail" placeholder="Почта" />
-        <textarea name="comment" placeholder="Оставьте комментарий"></textarea>
-        <input id="policy" name="policy" type="checkbox" value="policy" />
+        <div class="form-input">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+            class="input-modal"
+          />
+          <label for="name" class="text-form">Имя</label>
+          <svg class="images-modal">
+            <use href="./images/spryte.svg#name"></use>
+          </svg>
+        </div>
+        <div class="form-input">
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder=" "
+            class="input-modal"
+          />
+          <label for="tel" class="text-form">Телефон</label>
+          <svg class="images-modal">
+            <use href="./images/spryte.svg#tel"></use>
+          </svg>
+        </div>
+        <div class="form-input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder=" "
+            class="input-modal"
+          />
+          <label for="email" class="text-form">Почта</label>
+          <svg class="images-modal">
+            <use href="./images/spryte.svg#email"></use>
+          </svg>
+        </div>
+        <div class="form-input">
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Оставьте комментарий"
+            class="input-textarea"
+          ></textarea>
+          <label for="comment" class="text-form">Оставьте комментарий</label>
+        </div>
+        <input name="policy" type="checkbox" id="policy" value="policy" />
         <label for="policy"
           >Соглашаюсь с рассылкой и принимаю
-          <a href="" class="general-a">Условия договора</a>
-        </label>
-        <button type="submit">Отправить</button>
+          <a href="" class="general-a">Условия договора</a></label
+        >
+        <button type="submit" class="btn-modal">Отправить</button>
       </form>
     </div>
   </body>
