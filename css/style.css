@@ -304,21 +304,29 @@ img {
   padding: 12px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   display: inline-block;
+  outline: none;
+}
+.input-modal:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .input-textarea {
   width: 448px;
   height: 120px;
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
 
   resize: none;
+  outline: none;
+}
+.input-textarea:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .policy {
   display: inline-block;
@@ -352,28 +360,81 @@ img {
   position: relative;
   margin-bottom: 28px;
 }
+.form-inputcom {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text-formcom {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+
+  color: var(--connection);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .text-form {
   position: absolute;
   top: 50%;
   left: 42px;
   display: inline-block;
+
+  color: var(--connection);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .images-modal {
   position: absolute;
   top: 50%;
   left: 16px;
 
+  fill: var(--primary-text-color);
+
   display: inline-block;
 
   width: 18px;
   height: 18px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-modal:focus + .text-form {
-  transform: translateY(-50px);
+.input-modal:focus + .text-form,
+.input-modal:not(:placeholder-shown) + .text-form {
+  transform: translate(-24px, -38px);
+  color: var(--acent-text-color);
+  font-size: 12px;
+  line-height: 1.16;
 }
+.input-modal:focus ~ .images-modal {
+  fill: var(--acent-text-color);
+}
+.input-textarea:focus + .text-formcom,
+.input-textarea:not(:placeholder-shown) + .text-formcom {
+  transform: translateY(-21px);
+  color: var(--acent-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+}
+
 /* end css modal */
 
 .hero {
