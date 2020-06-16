@@ -7,11 +7,17 @@
 
   background-color: $modal-bg;
 }
+
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .modal-form {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 
   background-color: $primery-text-white;
 
@@ -21,6 +27,7 @@
   height: 581px;
   margin: 0 auto;
 }
+
 .modal-p {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -28,7 +35,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
 }
 
 .input-modal {
@@ -50,8 +56,6 @@
   width: 448px;
   height: 120px;
 
-  /* margin-bottom: 20px; */
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -63,6 +67,7 @@
   border-radius: 4px;
 }
 .policy {
+  position: relative;
   display: inline-block;
   color: $connection;
 
@@ -71,10 +76,22 @@
   line-height: 1.71;
   margin-bottom: 30px;
 }
-.btn-modal {
+.policy-input {
+  margin-left: 23.48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.policy .general-a {
   display: inline-block;
-  margin: 0 auto;
+  color: $acent-text-color;
+  text-decoration: underline;
 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.btn-modal {
   padding: 10px 55px;
 
   background: $acent-text-color;
@@ -167,4 +184,38 @@
   color: $acent-text-color;
   font-size: 12px;
   line-height: 1.16;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  transform: translateY(-50%);
+}
+.policy-input:checked ~ .icon-modal {
+  background-color: $acent-text-color;
+  background-image: url(../../images/checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $acent-text-color;
+}
+.btn-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/close-modal.svg);
+  background-color: $primery-text-white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }

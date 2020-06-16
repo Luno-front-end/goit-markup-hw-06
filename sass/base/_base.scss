@@ -25,6 +25,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   color: $primery-text-white;
   background-color: $acent-text-color;
 
@@ -38,6 +39,7 @@ img {
   padding: 10px 32px;
   text-align: center;
   min-width: 200px;
+  border: none;
 }
 .footerbtn-text {
   color: $primery-text-white;

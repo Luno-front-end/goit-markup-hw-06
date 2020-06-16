@@ -66,7 +66,7 @@
       <section class="hero">
         <div class="hero-container">
           <h1 class="title-general">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="general-a btn">Заказать услугу</a>
+          <button class="btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section-one">
@@ -453,16 +453,16 @@
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
-    <div role="group" class="modal">
+    <div role="group" class="modal is-hidden" data-modal>
       <form action="" class="modal-form" autocomplete="off">
+        <button class="btn-close" data-modal-close></button>
         <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
 
         <div class="form-input">
-          <label for="name"
-            ><input
+          <label>
+            <input
               type="text"
               name="name"
-              id="name"
               placeholder=" "
               class="input-modal"
             /><svg class="images-modal">
@@ -472,11 +472,10 @@
           </label>
         </div>
         <div class="form-input">
-          <label for="tel"
-            ><input
+          <label>
+            <input
               type="tel"
               name="tel"
-              id="tel"
               placeholder=" "
               class="input-modal"
             /><svg class="images-modal">
@@ -486,11 +485,10 @@
           >
         </div>
         <div class="form-input">
-          <label for="email"
-            ><input
+          <label>
+            <input
               type="email"
               name="email"
-              id="email"
               placeholder=" "
               class="input-modal"
             /><svg class="images-modal">
@@ -508,13 +506,21 @@
           ></textarea>
           <label for="comment" class="text-formcom">Комментарий</label>
         </div>
-        <input name="policy" type="checkbox" id="policy" value="policy" />
-        <label for="policy"
-          >Соглашаюсь с рассылкой и принимаю
-          <a href="" class="general-a">Условия договора</a></label
-        >
+
+        <label class="policy"
+          ><input
+            class="policy-input"
+            name="policy"
+            type="checkbox"
+            value="policy"
+          />Соглашаюсь с рассылкой и принимаю
+          <a href="" class="general-a">Условия договора</a>
+          <span class="icon-modal"></span>
+        </label>
+
         <button type="submit" class="btn-modal">Отправить</button>
       </form>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

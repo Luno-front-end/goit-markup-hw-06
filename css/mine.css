@@ -43,6 +43,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   color: #ffffff;
   background-color: #2196f3;
   font-weight: 700;
@@ -54,6 +55,7 @@ img {
   padding: 10px 32px;
   text-align: center;
   min-width: 200px;
+  border: none;
 }
 
 .footerbtn-text {
@@ -255,12 +257,18 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal-form {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
   background-color: #ffffff;
   padding: 40px 40px;
   width: 528px;
@@ -274,7 +282,6 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
 }
 
 .input-modal {
@@ -295,7 +302,6 @@ img {
 .input-textarea {
   width: 448px;
   height: 120px;
-  /* margin-bottom: 20px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -308,6 +314,7 @@ img {
 }
 
 .policy {
+  position: relative;
   display: inline-block;
   color: #757575;
   font-weight: 400;
@@ -316,9 +323,23 @@ img {
   margin-bottom: 30px;
 }
 
-.btn-modal {
+.policy-input {
+  margin-left: 23.48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.policy .general-a {
   display: inline-block;
-  margin: 0 auto;
+  color: #2196f3;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.btn-modal {
   padding: 10px 55px;
   background: #2196f3;
   color: #ffffff;
@@ -410,6 +431,41 @@ img {
   color: #2196f3;
   font-size: 12px;
   line-height: 1.16;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.policy-input:checked ~ .icon-modal {
+  background-color: #2196f3;
+  background-image: url(../../images/checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
+}
+
+.btn-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/close-modal.svg);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .hero {
