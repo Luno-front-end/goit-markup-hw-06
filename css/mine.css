@@ -1,18 +1,18 @@
 @charset "UTF-8";
 .icon-satellite::before {
-  background-image: url("../../images/satellite.svg");
+  background-image: url("../images/satellite.svg");
 }
 
 .icon-clock::before {
-  background-image: url("../../images/clock.svg");
+  background-image: url("../images/clock.svg");
 }
 
 .icon-pc::before {
-  background-image: url("../../images/pc.svg");
+  background-image: url("../images/pc.svg");
 }
 
 .icon-astronaut::before {
-  background-image: url("../../images/astronaut.svg");
+  background-image: url("../images/astronaut.svg");
 }
 
 .hidden-title {
@@ -478,7 +478,7 @@ img {
 
 .policy-input:checked ~ .icon-modal {
   background-color: #2196f3;
-  background-image: url(../../images/checked.svg);
+  background-image: url(../images/checked.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
@@ -490,7 +490,7 @@ img {
   right: -10px;
   width: 30px;
   height: 30px;
-  background-image: url(../../images/close-modal.svg);
+  background-image: url(../images/close-modal.svg);
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
