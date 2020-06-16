@@ -208,7 +208,7 @@
 }
 .policy-input:checked ~ .icon-modal {
   background-color: $acent-text-color;
-  background-image: url(../../images/checked.svg);
+  background-image: url(../images/checked.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: $acent-text-color;
@@ -219,7 +219,7 @@
   right: -10px;
   width: 30px;
   height: 30px;
-  background-image: url(../../images/close-modal.svg);
+  background-image: url(../images/close-modal.svg);
   background-color: $primery-text-white;
   border: none;
   border-radius: 50%;
