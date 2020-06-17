@@ -443,7 +443,7 @@
             </li>
           </ul>
         </div>
-        <div class="ssfooter-div">
+        <form action="" class="ssfooter-div">
           <h2 class="footer-heading">Подпишитесь на рассылку</h2>
           <div class="flex-sub">
             <label></label>
@@ -453,7 +453,7 @@
               </button> 
               </label>
           </div>
-        </div>
+        </form>
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
@@ -462,8 +462,10 @@
       <form action="" class="modal-form" autocomplete="off">
         <button class="btn-close" data-modal-close></button>
         <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+<ul class="general-ul">
+  
 
-        <div class="form-input">
+        <li class="form-input">
           <label>
             <input
               type="text"
@@ -475,8 +477,8 @@
             </svg>
             <span class="text-form">Имя</span>
           </label>
-        </div>
-        <div class="form-input">
+        </li>
+        <li class="form-input">
           <label>
             <input
               type="tel"
@@ -486,10 +488,10 @@
             /><svg class="images-modal">
               <use href="./images/spryte.svg#tel"></use>
             </svg>
-            <span class="text-form">Телефон</span></label
-          >
-        </div>
-        <div class="form-input">
+            <span class="text-form">Телефон</span> 
+            </label>
+        </li>
+        <li class="form-input">
           <label>
             <input
               type="email"
@@ -499,19 +501,19 @@
             /><svg class="images-modal">
               <use href="./images/spryte.svg#email"></use>
             </svg>
-            <span class="text-form">Почта</span></label
-          >
-        </div>
-        <div class="form-inputcom">
+            <span class="text-form">Почта</span> 
+          </label>
+        </li>
+        <li class="form-inputcom">
           <textarea
             name="comment"
             id="comment"
             placeholder=" "
-            class="input-textarea"
-          ></textarea>
+            class="input-textarea"> 
+          </textarea>
           <label for="comment" class="text-formcom">Комментарий</label>
-        </div>
-
+        </li>
+<li>
         <label class="policy"
           ><input
             class="policy-input"
@@ -522,7 +524,8 @@
           <a href="" class="general-a">Условия договора</a>
           <span class="icon-modal"></span>
         </label>
-
+        </li>
+</ul>
         <button type="submit" class="btn-modal">Отправить</button>
       </form>
     </div>
